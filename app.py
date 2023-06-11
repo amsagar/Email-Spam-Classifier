@@ -37,6 +37,8 @@ nltk.download('stopwords')
 tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
 model = pickle.load(open('model.pkl', 'rb'))
 st.title("NAIVE BAYES")
+st.markdown("<h1 style='text-align: center; color: red;'>Some title</h1>", unsafe_allow_html=True)
+
 st.subheader("Email Spam Classifier")
 
 input_sms = st.text_area("Enter the message")
