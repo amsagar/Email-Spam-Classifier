@@ -40,7 +40,7 @@ st.markdown("<h1 style='text-align: center; color: white;'>NAIVE BAYES CLASSIFIE
 
 st.subheader("Email Spam Classifier")
 
-input_sms = st.text_area(placeholder="Enter The Message")
+input_sms = st.text_area("Enter The Message")
 
 if st.button('Predict'):
 
