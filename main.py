@@ -44,6 +44,8 @@ df = df.drop_duplicates(keep='first')
 #     ssl._create_default_https_context = _create_unverified_https_context
 #
 # nltk.download('punkt')
+nltk.download('punkt')
+nltk.download('stopwords')
 df['num_ch'] = df['text'].apply(len)
 df['num_words'] = df['text'].apply(lambda x: len(nltk.word_tokenize(x)))
 df['sentence'] = df['text'].apply(lambda x: len(nltk.sent_tokenize(x)))
